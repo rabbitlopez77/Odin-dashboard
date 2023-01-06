@@ -1,0 +1,69 @@
+:root{
+    background-color: dimgrey;
+}
+#mainContainer{
+    display: grid;
+    width: 80vw;
+    min-width: 500px;
+    min-height: 600px;
+    height: 90vh;
+    border-style: solid;
+    border-color: aqua;
+    grid-template-columns: minmax(150px, 20%) 1fr;
+    grid-template-rows: minmax(100px, 25%) 1fr 1fr;
+    margin: auto;
+}
+.header{
+    background-color: white;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-radius: 10px;
+}
+#mainContainer>.sideBar{
+    background-color: rgb(82, 154, 249);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;;
+    border-radius: 20px;
+}
+#mainContainer>.midContent {
+    background-color: black;
+    color: white;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    border-radius: 10px;
+    padding: 5px;
+}
+.midContent{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+}
+.midContentMain{
+    border-style: solid;
+    border-color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+.midContentSide{
+    border-style: solid;
+    border-color: white;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.sideBar{
+    display: grid;
+    grid-template-rows: 1, 50px repeat(4, minmax(50px, 10%));
+    grid-template-columns: 1, minmax(150px, 1fr);
+}
+.sideBarSubLogo{
+    background-color: aquamarine;
+}
+.sideBarSub{
+    padding: 5px;
+}
