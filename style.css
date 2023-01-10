@@ -9,7 +9,7 @@
     height: 100vh;
     border-style: solid;
     border-color: aqua;
-    grid-template-columns: minmax(100px, 15%) 1fr;
+    grid-template-columns: minmax(25px, 13%) 1fr;
     grid-template-rows: minmax(50px, 10%) 1fr 1fr;
     margin: auto;
 }
@@ -18,6 +18,8 @@
     grid-column-start: 2;
     grid-column-end: 3;
     border-radius: 10px;
+    overflow: hidden;
+    z-index: 2;
 }
 #mainContainer>.sideBar{
     background-color: rgb(58, 74, 214);
@@ -72,19 +74,23 @@
 .sideBar{
     display: grid;
     grid-template-rows: 50px repeat(4, minmax(50px, 10%));
+    z-index: 1;
+    overflow: auto;
 }
 .sideBarSubLogo{
     background-color: aquamarine;
     border-radius: 10px;
+
 }
 .sideBarSub{
     padding: 5px;
 }
 .sideBarHeading{
     font: 10px;
+    text-align: center;
 }
 .sideBarLogo{
-    width: 15%;
+    width: 20%;
 }
 .websitePic{
     width: 90%;
