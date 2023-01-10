@@ -6,11 +6,11 @@
     width: 85vw;
     min-width: 500px;
     min-height: 600px;
-    height: 90vh;
+    height: 100vh;
     border-style: solid;
     border-color: aqua;
     grid-template-columns: minmax(100px, 15%) 1fr;
-    grid-template-rows: minmax(100px, 25%) 1fr 1fr;
+    grid-template-rows: minmax(50px, 10%) 1fr 1fr;
     margin: auto;
 }
 .header{
@@ -20,7 +20,7 @@
     border-radius: 10px;
 }
 #mainContainer>.sideBar{
-    background-color: rgb(82, 154, 249);
+    background-color: rgb(58, 74, 214);
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -28,7 +28,7 @@
     border-radius: 20px;
 }
 #mainContainer>.midContent {
-    background-color: grey;
+    background-color: rgb(84, 120, 202);
     color: white;
     grid-column-start: 2;
     grid-column-end: 3;
@@ -40,7 +40,7 @@
 .midContent{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 40%);
 }
 .midContent>.midContentMain{
     border-style: solid;
@@ -49,18 +49,19 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 6;
+    overflow: auto;
 }
 .midContentMain{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     row-gap: 10px;
     column-gap: 10px;
     padding: 10px;
 }
 .midContentMainSub{
-    border-style: solid;
-    border-color: aliceblue;
+    background-color: rgb(4, 55, 130);
+    text-align: center;
 }
 .midContentSide{
     border-style: solid;
@@ -81,4 +82,14 @@
 }
 .sideBarHeading{
     font: 10px;
+}
+.sideBarLogo{
+    width: 15%;
+}
+.websitePic{
+    width: 90%;
+    transition: 1s;
+}
+.websitePic:hover{
+    scale: 1.5;
 }
